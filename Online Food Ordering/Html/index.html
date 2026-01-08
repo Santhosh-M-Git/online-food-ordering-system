@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Food Ordering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>🍔 Online Food Ordering</h1>
+  <a href="cart.html" class="cart-btn">View Cart 🛒</a>
+</header>
+
+<div class="controls">
+  <input type="text" id="searchInput" placeholder="Search food..." />
+
+  <button onclick="filterCategory('all')">All</button>
+  <button onclick="filterCategory('veg')">Veg 🟢</button>
+  <button onclick="filterCategory('nonveg')">Non-Veg 🔴</button>
+</div>
+
+<div class="food-container" id="foodList"></div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

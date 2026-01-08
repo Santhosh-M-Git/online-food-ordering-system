@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>💳 Payment</h1>
+</header>
+
+<div class="checkout-box">
+  <h2>Select Payment Method</h2>
+
+  <div class="payment-options">
+    <label class="pay-item">
+      <input type="radio" name="pay" checked>
+      <span>UPI</span>
+    </label>
+  
+    <label class="pay-item">
+      <input type="radio" name="pay">
+      <span>Credit / Debit Card</span>
+    </label>
+  
+    <label class="pay-item">
+      <input type="radio" name="pay">
+      <span>Cash on Delivery</span>
+    </label>
+  </div>
+  
+
+  <button onclick="placeOrder()">Pay Now</button>
+</div>
+
+<script src="js/payment.js"></script>
+</body>
+</html>
